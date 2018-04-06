@@ -1,0 +1,19 @@
+{
+	"brand": "letemps",
+	"title": "Face aux classes infernales, les profs romands vivent un cauchemar",
+	"description": "Maintenir la discipline chez les 12-15 ans épuise le corps enseignant. A Genève, le système du cycle a créé des ghettos scolaires, parfois ingérables. Enquête sur un mal qui empoisonne l'école.",
+	"twitterDescription": "Maintenir la discipline chez les 12-15 ans épuise le corps enseignant. A Genève, le système du cycle a créé des ghettos scolaires, parfois ingérables. Enquête sur un mal qui empoisonne l'école.",
+	"authors": "Sylvain Besson, César Greppin",
+	"imgSocial": "social.jpg", 
+	
+
+	"navBarStyle": "black",
+	"navBarOffset": "0",
+	"navBarLocked": false,
+	"devmode": false,
+
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "http://www.letemps.ch"
+	}
+}

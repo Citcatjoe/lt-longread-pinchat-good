@@ -1,0 +1,1728 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		{{ block('head_brand') }}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/loader.css" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+
+		<script src="https://use.typekit.net/pve7eut.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script> 
+
+		<script>
+			document.documentElement.className = 'js';
+		</script>
+		
+	</head>
+
+	<body style="padding-top: {{ navBarOffset }};">
+		{{ block('bar_brand') }}
+		{# <div class="overlay">
+			<img class="logo-brand" src="img/logo-lt-blanc.svg" alt="">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div> #}
+		
+		<!-- <div class="progress"></div> -->
+
+		<!-- <nav>
+			<ul>
+			</ul>
+		</nav> -->
+
+		<header>
+			<div class="header--bg">
+				<div class="header-gradient"></div>
+				<div class="header--bg--img"></div>
+				{# <div class="header--bg--vid">
+					<video autoplay loop muted>
+						<source src="https://player.vimeo.com/external/252678358.hd.mp4?s=2275fdf9c90244cc9aa0b7fdfa9850d82948dc3a&profile_id=175"
+						 type="video/mp4"> Votre navigateur ne supporte pas les vidéos HTML%.
+					</video>
+				</div> #}
+			</div>
+			
+			<div class="header--title"> 
+				<div class="container">
+					<h1 class="f-font1 f-weight400 f-h1 f-white-special">Face aux classes infernales, les profs romands vivent un cauchemar</h1>
+					<div class="spacer-xs"></div>
+					<h2 class="f-font1 f-h2 f-white-special f-aa">Maintenir la discipline chez les 12-15 ans épuise le corps enseignant. A Genève, le système du cycle a créé des ghettos scolaires, parfois ingérables. Enquête sur un mal qui empoisonne l'école.</h2>
+				</div>
+			</div>
+			<!-- <div class="header--caption">
+				<div class="container f-font1 f-gray-medium f-aside f-aa">
+					Photogra– phies: Eddy Mottaz
+				</div>
+			</div> -->
+		</header>
+
+		<section>
+			<div class="container">
+				<div class="row">
+
+					<div class="box-aside infos is-absolute col-md-4">
+						<p class="f-font1 f-aside f-gray-dark f-nomargin">
+							<span class="f-font1 f-weight600">Sylvain Besson</span><span class="f-aa">, rédacteur en chef adjoint et journaliste d'investigation au <i>Temps</i></span>
+						</p>
+						<div class="spacer-sm"></div>
+						<a href="mailto:sylvain.besson@letemps.ch" target="_blank"><button type="button" class="btn btn-default btn-lg f-font3 f-weight600 f-aa">Lui écrire</button></a>
+						<div class="spacer-sm"></div>
+						<p class="f-font1 f-aside f-gray-medium f-aa f-nomargin">Publié le 7 avril 2018<br>20 minutes de lecture</p>
+						<div class="spacer-lg"></div>
+						<p class="f-font1 f-weight600 f-aside f-black f-nomargin">Partager cet article</p>
+						<div class="spacer-xs"></div>
+						<div class="sharebox">
+							<a href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+							<a href="https://twitter.com/intent/tweet?text={{ twitterDescription ~ ' ' ~ app.url ~ ' '|url_encode }}&via={{ brand }}" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+							<a href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+						</div>
+					</div>
+
+					<div class="content col-md-12">
+						
+						<p class="lettrine">
+							Après des mois de punitions et de recadrages infructueux, la classe la plus pénible du Cycle de Pinchat a fini par exploser. C'était en janvier dernier.
+						</p>
+						<p>
+							A bout de nerfs – certains ont craqué, voire pleuré – les enseignants de la 1011 CT ont pris une décision radicale: dissoudre la classe et disperser sa douzaine d'élèves dans le reste de l'école, située à la lisière sud de Genève, entre Carouge et Veyrier.
+						</p>
+
+						<p>
+							«Les élèves ne se respectaient pas entre eux et discutaient systématiquement les directives des enseignants, raconte le directeur de Pinchat, Alain Basset. Ils demandaient: «Pourquoi je devrais travailler? Pourquoi je devrais arrêter de discuter?» Malgré l'intervention d'un coach extérieur, «on a constaté que ça n'allait plus du tout», résume-t-il.
+						</p>
+
+						<p>
+							Le cas est extrême, mais partout en Suisse romande, des situations semblables se produisent. Notamment dans des classes
+							d'enfants de 12-15 ans, placés au bas de l'échelle scolaire, qui se sentent méprisés par le système. Et qui, par représailles,
+							font subir l'enfer à leurs profs.
+						</p>
+
+						
+
+						<!-- GRAPH full -->
+						
+						<!-- PICTURE normal -->
+						<div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-sm ">
+									<img class="img-responsive zoom lazy col-md-8" data-original="img/article/pinchat99.jpg">
+									<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">Entrée du Cycle d'orientation de Pinchat.<br>— Photo: Eddy Mottaz</figcaption>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+
+						
+
+						<p class="f-h6 f-font1 f-inter">Des classes infernales</p>
+
+						<!-- <div class="box-aside col-md-4" style="color:red; display: inline; overflow: auto;">
+							<figure>
+								<canvas id="myChart" ></canvas>
+								<div class="spacer-xl"></div>
+								<figcaption class="f-font1 f-aside f-gray-medium f-aa">En plein foyer de l'épidémie, au milieu des oliviers desséchés, Tina Minerva et son association parviennent à guérir des arbres grâce à des méthodes respectueuses de l'environnement</figcaption>
+							</figure>
+						</div> -->
+
+						
+
+						<p>
+							Dans la classe 1011 CT, «les élèves lançaient aux profs des remarques du style: «Allez vous faire foutre. J'en ai rien à
+							cirer», raconte une personne qui connaît la situation. L'essentiel des troubles est attribué à un noyau dur de filles en
+							colère, qui ont cumulé les sanctions – jusqu'à dix jours d'exclusion du Cycle. 
+						</p>
+
+						<!-- PICTURE aside (doit marcher avec un autre contenu.) -->
+						<div class="box-aside col-md-4" style="color:red; display: inline; overflow: auto;">
+							<figure>
+								<!-- <canvas id="myChart3"></canvas> -->
+								<figcaption class="f-font1 f-aside f-gray-medium f-aa"><b class="f-gray-dark">Evolution du nombre d'actes de violence enregistrés dans les écoles genevoises</b><br>Source: rapport SIGNA 2016-2017</figcaption>
+								<div class="spacer-xl"></div>
+								<canvas id="myChart"></canvas>
+								{# <div class="spacer-xl"></div> #}
+								{# <figcaption class="f-font1 f-aside f-gray-medium f-aa">Source: rapport SIGNA 2016-2017</figcaption> #}
+							</figure>
+						</div>
+
+						
+						<p>
+							Le jour même de la dissolution de la classe,
+							trois élèves se sont fait expulser du cours. Dès la première heure, face à un prof remplaçant, l'une des «meneuses» avait
+							refusé de travailler en déclarant simplement: «J'ai pas envie.»
+						</p>
+						
+
+						<p>
+							«Mes collègues qui s'occupaient de cette classe revenaient épuisés, raconte Juliane Bourgeois, une professeure de Français
+							et d'histoire à Pinchat. Pendant 45 minutes, les élèves parlent, ne vous écoutent pas, ne s'asseyent pas, crient.»
+						</p>
+
+						<p>
+							Après une énième journée d'avanies, les profs ont voulu créer un choc psychologique en dispersant la classe. L'action est
+							paraît-il sans précédent. Mais elle a provoqué peu de réactions parmi les autres enseignants de Pinchat.
+						</p>
+
+						<p>
+							«On en a pas tellement parlé entre nous, confie l'un d'eux. On est tellement confronté à ça que ça ne nous sort pas de notre
+							quotidien.»
+						</p>
+
+						<p class="f-h6 f-font1 f-inter">Le piège des niveaux</p>
+
+						
+						
+						<p>
+							A Genève, le Cycle d'orientation, école obligatoire pour les 12-15 ans, est divisé en trois «regroupements», du plus faible
+							au plus fort: R1, R2 et R3. Ces niveaux deviennent ensuite CT (communication et technologie), LC (langues vivantes et communication)
+							et LS (littéraire et scientifique). Mais la réalité scolaire reste la même: les élèves les plus faibles vont en R1 puis en
+							CT, les meilleurs en R3 puis en LS.
+						</p>
+
+						<!-- PICTURE aside (doit marcher avec un autre contenu.) -->
+						<div class="box-aside col-md-4" style="color:red; display: inline; overflow: auto;">
+							<figure>
+								<img class="zoom lazy" data-original="img/article/nadege-salzmann-2.jpg">
+								<div class="spacer-xl"></div>
+								<figcaption class="f-font1 f-aside f-gray-medium f-aa">Nadège Salzmann Hirsch, membre des femmes PLR genevoises et professeur à Pinchat.<br>— Photo: Eddy Mottaz</figcaption>
+							</figure>
+						</div>
+						
+						<!-- PICTURE NORMAL -->
+						<!-- <div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-sm ">
+									<img class="img-responsive zoom lazy col-md-8" data-original="img/article/avalanche2.jpg">
+									<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">Il s'est senti totalement impuissant. Rescapé de l'avalanche, Christian s'en éloigne sur un ski. Il retrouvera le second
+										au printemps.</figcaption>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div> -->
+
+						<p>
+							A Pinchat, sur 636 élèves en mars 2018, on ne compte qu'une quarantaine d'élèves de R1/CT. Soit quatre classes, en comptant
+							celle qui a été dissoute en janvier, mais qui concentrent les difficultés. «Ce sont effectivement des classes très difficiles,
+							où l'on n'a plus beaucoup l'occasion de réellement enseigner, constate Nadège Salzmann Hirsch, membre des femmes PLR genevoises
+							et professeur à Pinchat. On passe souvent l'heure à faire de la discipline, à tenter de gérer. On a parfois l’impression
+							que c’est simplement mieux qu’ils soient là que dans la rue, c’est le seul sens que l’on trouve.»
+						</p>
+						
+						
+						{# <p class="f-h6 f-font1 f-inter">«Comme une bagarre»</p> #}
+
+						<!-- PICTURE aside (doit marcher avec un autre contenu.) -->
+						<!-- <div class="box-aside col-md-4" style="color:red; display: inline; overflow: auto;">
+							<figure>
+								<img class="zoom lazy" data-original="img/article/christine-agassis.jpg">
+								<div class="spacer-xl"></div>
+								<figcaption class="f-font1 f-aside f-gray-medium f-aa">En plein foyer de l'épidémie, au milieu des oliviers desséchés, Tina Minerva et son association parviennent à guérir des
+									arbres grâce à des méthodes respectueuses de l'environnement</figcaption>
+							</figure>
+						</div> -->
+
+						<p>
+							Le syndrome qui affecte les R1/CT tient en quelques mots: «Difficultés d'apprentissage, démotivation, ce qui se traduit
+							par le dénigrement du prof, déficit d'attention, agressivité et insolence, manque total d'implication – ils ne sont juste
+							pas là», décrit Christine Agassis Zink, une spécialiste des chevaux qui accompagne les enseignants de ces classes turbulentes.
+						</p>
+
+						
+						
+						<p>
+							Avant 2011, le Cycle genevois ne connaissait que deux niveaux. La nouvelle organisation, avec ses trois strates, a accentué
+							les problèmes de discipline, en créant des classes chimiquement pures d'élèves en difficulté.
+						</p>
+
+						<!-- PICTURE double -->
+						<div class="box-double">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-lg col-md-6">
+									<img class="img-responsive zoom lazy" data-original="img/article/pinchat12.jpg">
+									<!-- <figcaption class="f-font1 f-aside f-gray-medium f-aa">
+																<div class="spacer-xl"></div>
+																Le Salento (Salentu en dialecte) constitue l'extrémité sud-est de la région des Pouilles en Italie. Décrit comme étant le
+																« talon de la botte italienne », il englobe la totalité de la province de Lecce.
+															</figcaption> -->
+								</figure>
+								<figure class="figure-lg col-md-6">
+									<img class="img-responsive zoom lazy" data-original="img/article/pinchat10.jpg">
+									<!-- <figcaption class="f-font1 f-aside f-gray-medium f-aa">
+																<div class="spacer-xl"></div>
+																Le Salento (Salentu en dialecte) constitue l'extrémité sud-est de la région des Pouilles en Italie. Décrit comme étant le
+																« talon de la botte italienne », il englobe la totalité de la province de Lecce.
+															</figcaption> -->
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+						
+						<p>
+							«Quand il y a trois étages, vous êtes à la cave, vous n'êtes plus seulement au rez», estime Salima Moyard, coprésidente
+							du syndicat des enseignants du Cycle. «Ces élèves ont une image extrêmement dégradée d'eux-mêmes. Ils disent: on est nuls,
+							on est que des R1, on peut pas comprendre. Du coup, faire passer un contenu est horriblement difficile.»
+						</p>
+
+						<!-- <div class="collapsable is-collapsed">
+							<div class="collapsable--header f-center">
+								<figure class="portrait">
+									<img src="img/article/collapsable2-thumb.jpg">
+								</figure>
+								<span class="f-font1 f-weight400 f-h6 f-flash">
+									Portrait: Jean-Luc Lugon, l’homme qui lit dans la neige
+								</span>
+								<span class="f-font2 f-weight400 f-h5 f-gray-medium f-aa">
+									Le responsable de la sécurité de la vallée du Trient étudie le manteau neigeux jour après jour. Les données qu’il recueille servent notamment à établir la carte suisse des dangers.
+								</span>
+								<button type="button" class="btn btn-default btn-lg btn-reveal f-font3 f-weight600 f-aa">Ouvrir</button>
+							</div>
+						
+							<div class="collapsable--content">
+								
+								<div class="encart SINFORMER no-padding">
+									<div class="clearfix">
+										<div class="col-md-12 pull-right" style="padding: 0;">
+											<div class="encart-3-columns">
+												<span class="f-h6 f-font1 f-weight700">Jean-Luc Lugon, l’homme qui lit dans la neige</span>
+												<div class="spacer-sm"></div>
+												<span class="f-font1 f-weight700 f-aa">Le responsable de la sécurité de la vallée du Trient étudie le manteau neigeux jour après jour. Les données qu’il recueille
+													servent notamment à établir la carte suisse des dangers.</span>
+												<div class="spacer-sm"></div>
+								
+												<span class="f-font2">Le soleil est réapparu, enfin, il peut souffler. Ces dernières semaines, à mesure que les chutes de neige prenaient de
+													l’importance, les nuits de Jean-Luc Lugon s’amenuisaient. Lundi, alors que le Valais gisait sous un danger de degré
+													5, le responsable de la sécurité pour la vallée du Trient était sur le qui-vive. Sillonnant son secteur de part en part,
+													il a pris la décision de faire évacuer les zones menacées par les avalanches dans les villages de Trient et de Finhaut. Sous
+													ses yeux, ces monstres de neige ont dévalé les pentes mais n’ont que frôlé les habitations.</span>
+												<div class="spacer-sm"></div>
+												<figure>
+													<img src="img/article/lugon2.jpg" class="zoom">
+												</figure>
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Le lendemain, comme s’il lui avait fallu la nuit pour négocier avec les bacchantes des cimes, le spécialiste a, la conscience
+													tranquille, invité les habitants du coin à regagner leur foyer. «Quand on a de grosses chutes de neige, le manteau se
+													stabilise très vite», explique-t-il. «Pour les routes et les villages, je ne crains plus vraiment les avalanches. Les
+													randonneurs doivent toutefois rester attentifs aux accumulations de neige qui se forment rapidement avec le vent.»</span>
+								
+												<div class="spacer-sm"></div>
+												<div class="spacer-sm"></div>
+								
+												<span class="f-font1 f-weight700">Réveil à 2 heures du matin</span>
+												<div class="spacer-sm"></div>
+												<span class="f-font2">La voix douce du Valaisan ne trahit pas le poids de la responsabilité qui pèse sur ses épaules. Cette dernière semaine,
+													il s’est levé tous les matins à 2h pour d’abord étudier les modèles informatiques, puis les archives et imaginer, en
+													croisant ses informations avec ses connaissances, jusqu’où ses avalanches pourraient descendre. C’est lui, ensuite,
+													qui alerte les états-majors communaux du danger qui menace routes et villages de son secteur. Et c’est lui aussi qui,
+													comme 50 homologues sur l’ensemble du territoire suisse, tous les jours de l’hiver, envoie ses observations à l’institut
+													SLF pour l’étude de la neige et des avalanches à Davos afin qu’une carte des dangers nationale soit établie.</span>
+												<div class="spacer-sm"></div>
+												<figure>
+													<img src="img/article/lugon4.jpg" class="zoom">
+												</figure>
+								
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Le territoire qu’il surveille depuis douze hivers couvre 220 kilomètres carrés, le long de la frontière franco-suisse
+													entre le glacier du Trient et les Dents du Midi. Enfant de la vallée, cet accompagnateur en montagne connaît cette région
+													comme sa poche. Il y est d’ailleurs entièrement dévoué et la parcourt essentiellement à ski. «Pour faire ce métier,
+													il faut être passionné», avait-il livré un jour superbe de décembre alors qu’il nous emmenait en randonnée sur l’Arpille,
+													le sommet qui domine la route du col de la Forclaz.</span>
+								
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Il avait parqué son pick-up et, son sac à dos avait chargé d’outils de mesure ainsi que d’un petit thermos. Il avait,
+													d’un pas serein, tracé la neige en peaux de phoque à travers les sapins sans cesser de s’extasier sur la beauté du paysage.
+													Parfois, il s’arrêtait pour désigner de la pointe du bâton un des douze couloirs à avalanches qui menacent la route
+													du col.
+												</span>
+								
+												<div class="spacer-sm"></div>
+												<div class="spacer-sm"></div>
+												<span class="f-font1 f-weight700">La saison sous les yeux</span>
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Dans la neige, ses sens semblent s’affûter. L’homme guette les coulées spontanées, éprouve la réaction du manteau et
+													scrute l’état de la neige sous toutes ses coutures. Il lit en elle comme dans un livre et lorsqu’il y taille une brèche
+													et découpe un profil stratigraphique, c’est la saison entière qui se déploie sous ses yeux. La taille des grains, leur
+													forme, la façon dont ils s’enlacent permet à Jean-Luc Lugon de prévoir la réaction de la couverture neigeuse dans les
+													pentes similaires.</span>
+								
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Dans sa tête, les données du ciel et de la terre sont sans cesse croisées. Mais cela lui arrive de se référer aussi aux
+													humains, qui à l’image de son collègue de la zone limitrophe lui transmettent d’autres pistes afin de mieux comprendre
+													sa vallée à lui. Seul à effectuer son travail, il respecte un mot d’ordre: ne pas perdre le fil des précipitations et
+													des événements de la saison.</span>
+								
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Pas étonnant, donc, qu’à force de les surveiller, il a comme apprivoisé ces avalanches. Il sait en tous les cas d’où
+													elles partent et jusqu’où elles vont. Contrairement à ses collègues des autres régions, il est peu enclin à l’usage
+													des explosifs et de l’hélicoptère. Non pas par pacifisme exacerbé, mais parce que sa vallée en a moins besoin. «Il faut
+													connaître la région, mais ici, en général, la topographie se suffit à elle-même», affirme-t-il.
+												</span>
+												<div class="spacer-sm"></div>
+												<figure>
+													<img src="img/article/lugon5.jpg" class="zoom">
+												</figure>
+												<div class="spacer-sm"></div>
+												<div class="spacer-sm"></div>
+												<span class="f-font1 f-weight700">Pluie salvatrice</span>
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Depuis le début de la saison, 12 mètres de neige se sont déposés dans son secteur, à 2200 mètres. «La situation est toutefois
+													différente qu’en 1999, car il est tombé moins de neige fraîche en dessous de 1800 mètres. C’est la pluie qui a sauvé
+													la situation. Sinon, en poudreuse, mes avalanches peuvent partir à 2600 mètres et atteindre la plaine à 700 mètres en
+													cassant tout sur leur passage.»</span>
+								
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Sa vallée abrite des monstres dévastateurs. Les dompter est une vaine perspective. Jean-Luc Lugon n’a d’ailleurs jamais
+													eu la prétention de le faire. «Ce qui est descendu lundi était énorme. Si une seconde semaine comme celle que l’on vient
+													d’endurer se profile, cela risque d’être catastrophique.» Il dit ça, mais il ajoute. «En même temps, ça m’étonnerait.»
+													Lui seul le sait et on est tenté de lui faire confiance. </span>
+								
+											</div>
+								
+								
+								
+								
+										</div>
+									</div>
+								
+								</div>
+						
+							</div>
+						
+							<div class="collapsable--footer f-center">
+								<button type="button" class="btn btn-default btn-lg f-font3 f-weight600 f-aa">Ouvrir</button>
+							</div>
+						</div> -->
+
+						<p class="f-h6 f-font1 f-inter">20 à 45 minutes de discipline</p>
+
+						
+						
+						<p>
+							A Pinchat, les cours débutent par un rituel. Dans la classe, les élèves se mettent debout derrière leur pupitre, veste posée,
+							en silence, pour saluer leur prof. Cette simple séquence peut durer 15 secondes – ou tourner au calvaire. Obtenir le silence
+							prend alors 10, 15 ou 20 minutes, et le chahut se prolonge parfois jusqu'à engloutir l'entier d'un cours de 45 minutes.
+						</p>
+
+						<!-- PICTURE normal -->
+						<div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-sm ">
+									<img class="img-responsive zoom lazy col-md-8" data-original="img/article/pinchat31.jpg">
+									<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">— Photo: Eddy Mottaz</figcaption>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+
+						<p>
+							«D'abord, il faut qu'ils sortent leurs affaires, détaille Nadège Salzmann Hirsch. Il faut parfois dire à chacun individuellement:
+							«S'il te plaît, sors tes affaires», en l'appelant par son prénom. Ensuite, il y en a un qui s'assied parce qu'il en a marre,
+							un autre qui ouvre la fenêtre, un qui relance les conversations... Et quand enfin on dit bonjour, asseyez-vous, sortez vos
+							dossiers, ça relance le bruit.»
+						</p>
+						
+						<p>
+							«Pour leur faire enlever leurs vestes, il faut négocier, ajoute une autre enseignante. Les élèves essaient de discuter:
+							«Je vais avoir froid si je l'enlève.» Et pendant que tu veux recadrer ça, les autres commencent à manger, ils ont les poches
+							pleines de bonbons, de chips.»
+
+							<!-- ANIM -->
+							<div class="scene-stepped scene-stepped-1 box-full">
+								<div class="row">
+									<div class="spacer-sm"></div>
+									<div class="scene-wrapper col-md-8 col-md-offset-2">
+										<figure class="scene-stepped--figure col-md-5">
+											<img src="img/article/kalonji-conne-kid.png" alt="" class="anim-img1">
+											<img src="img/article/kalonji-conne-prof.png" alt="" class="anim-img2">
+											<img src="img/article/kalonji-conne-txt.png" alt="" class="anim-img3">
+										</figure>
+										<figcaption class="scene-stepped--figcaption col-md-7">
+											<div class=" f-font1 f-quote f-gray-dark f-weight100 f-aa  col-xs-offset-1">
+												1 - Un élève de Pinchat à son enseignante, en début d'année
+												<span class="signature f-font1 f-aside f-weight400 f-gray-medium f-aa">— Illustration: Kalonji</span>
+											</div>
+										</figcaption>
+									</div>
+									<div class="spacer-xl"></div>
+								</div>
+							</div>
+						</p>
+
+						<p>
+							La situation de Pinchat n'a rien d'exceptionnel. Les autres cycles genevois connaissent peu ou prou les mêmes problèmes.
+							Et ils se retrouvent dans le reste de la Suisse romande, même si c'est à un degré moindre.
+						</p>
+
+						<p>
+							«J'interviens dans tous les cantons romands et je constate qu’il y a des situations difficiles un peu partout, aussi bien
+							dans les classes primaires que secondaires, à Fribourg, Neuchâtel, en Valais, dans le Jura», constate Jean-Claude Richoz*,
+							un coach spécialisé qui a travaillé à Pinchat pour recadrer la classe 1011 CT.
+						</p>
+
+						<p>
+							«Dans certains établissements secondaires urbains, comme à Genève ou à Lausanne, c’est parfois plus extrême et il devient
+							difficile d'enseigner. Certains élèves très peu scolaires, ou qui ont eu un parcours compliqué, posent des problèmes difficiles
+							à résoudre.»
+						</p>
+
+						<p class="f-gray-medium">
+							* Auteur du livre
+							<a href="http://www.jcrichoz.ch/" target="_blank"><i>Gestion de classes et d'élèves difficiles</i></a>, Lausanne, Favre, 2015.
+						</p>
+						
+						<p class="f-h6 f-font1 f-inter">Familles désintégrées</p>
+						
+						<p>
+							Derrière ces classes ingérables se cachent parfois des situations sociales très dures. «J'ai vu des élèves venir en classe
+							avec des bleus, témoigne une enseignante, d'autres qui s'occupent de trois, quatre ou cinq frères et soeurs en bas âge, j'ai
+							même eu un élève qui amenait ses affaires dans un carton.» L'éclatement de la cellule familiale joue souvent un rôle clé.
+							Exemple parmi d'autres à Pinchat: un élève en mauvais termes avec sa mère, dont le père est absent, qui vit chez sa grand-mère
+							et présente une agitation anormale, se levant sans cesse et perturbant la classe avec de petits bruits.
+						</p>
+
+						<!-- NEWSLETTER -->
+						<!-- <div class="box-corridor col-md-8 col-md-offset-4">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<a href="http://www.jcrichoz.ch/"
+								 target="_blank">
+									<div class="related col-sm-10 col-sm-offset-1 ">
+										<img src="img/article/champ-square.jpg" alt="">
+										<h6 class="f-font1 f-h5 f-black f-aa">
+											 Gestion de classes et d'élèves difficiles
+										</h6>
+						
+										<span class="f-font1 f-aside f-gray-medium f-aa f-nomargin">Livre par Jean-Claude Richoz</span>
+										<div class="spacer-sm"></div>
+										<button type="button" class="btn btn-default f-font3 f-weight600 f-aa">Plus</button>
+						 -->
+										<!-- <div class="input-group form-button-fix">
+																	<input type="text" class="form-control input-lg f-font1 f-aa" placeholder="Votre email">
+																	<span class="input-group-btn">
+																		<button class="btn btn-default btn-lg f-font3 f-weight600 f-aa" type="button">S'inscrire</button>
+																	</span>
+																</div> -->
+									<!-- </div>
+								</a>
+								<div class="spacer-lg"></div>
+							</div>
+						</div> -->
+						
+						<!-- ANIM -->
+						<div class="scene-stepped scene-stepped-2 box-full">
+						    <div class="row">
+								<div class="spacer-sm"></div>
+								<div class="scene-wrapper col-md-8 col-md-offset-2">
+									<figure class="scene-stepped--figure col-md-5">
+										<img src="img/article/kalonji-enfant-txt.png" alt="" class="anim-img1">
+										<img src="img/article/kalonji-enfant-prof.png" alt="" class="anim-img2">
+									</figure>	
+									<figcaption class="scene-stepped--figcaption col-md-7">
+										<div class=" f-font1 f-quote f-gray-dark f-weight100 f-aa  col-xs-offset-1">
+											2 - Un élève de Pinchat à son enseignante, en début d'année
+											<span class="signature f-font1 f-aside f-weight400 f-gray-medium f-aa">— Illustration: Kalonji</span>
+										</div>
+									</figcaption>
+								</div>
+						        <div class="spacer-xl"></div>
+						    </div>
+						</div>
+						
+						<p>
+							«Ce que je vois le plus en ce moment, ce sont des familles monoparentales, où le parent doit trouver un travail très vite
+							suite à une séparation, constate le directeur de Pinchat, Alain Basset. Beaucoup de familles cumulent plusieurs boulots,
+							par exemple un temps partiel mal rémunéré, plus un autre le soir pour faire bouillir la marmite.»
+						</p>
+
+						
+						<!-- PICTURE normal -->
+						<div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-sm ">
+									<img class="img-responsive zoom lazy col-md-8" data-original="img/article/pinchat76.jpg">
+									<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">— Photo: Eddy Mottaz</figcaption>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+						
+						
+						<p>
+							A Pinchat, beaucoup d'élèves de R1/CT sont d'origine étrangère: Portugal, Espagne, Amérique du Sud, Kosovo, Balkans, voire
+							pays arabes... Leurs parents parlent parfois mal français et ne peuvent pas aider pour les devoirs – une proportion de dix
+							devoirs non faits sur douze n'est pas exceptionnelle. Même assister aux réunions de parents d'élèves est un défi pour eux,
+							«surtout parce qu'ils travaillent le soir et n'osent pas en parler à leur patron, explique Alain Basset. Ça concerne par
+							exemple les agents de sécurité ou de nettoyage, les concierges, les personnes qui travaillent à l'aéroport ou même dans les
+							magasins.»
+						</p>
+
+						
+						
+						<p class="f-h6 f-font1 f-inter">Géographie d'une crise</p>
+						
+						<p>
+							Pourtant, Pinchat n'est pas une école pour défavorisés. Perché au rebord d'une falaise qui domine Carouge, le complexe scolaire
+							se situe à la frontière de deux zones, de deux mondes. Sur le plateau, des quartiers de villas à l'ambiance presque campagnarde.
+							En bas, une périphérie de cités HLM dont certaines sont plutôt délabrées.
+						</p>
+						
+						<!-- PICTURE NORMAL -->
+						<!-- <div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-sm ">
+									<img class="img-responsive zoom lazy col-md-8" data-original="img/article/cachou.jpg">
+									<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">C'est en montant à la Pointe Boveire que Cachou se fait emporter pour la première fois, en 2004. Restée à la surface de
+										la coulée, elle se souvient d'une sensation presque agréable. «Comme sur un tapis volant».</figcaption>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div> -->
+						
+						<p>
+							«On peut dire qu'une bonne partie des élèves de R1/CT viennent du bas, et qu'ils doivent monter leur chemin de calvaire
+							jusqu'au cycle, résume Jean-Michel Bugnion, directeur de Pinchat ad interim en 2012 et candidat PDC au Grand Conseil. C'est
+							sur ce chemin qu'une partie des tensions, des frustrations s'exprime.»
+						</p>
+
+						<!-- PICTURE full -->
+						<div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-lg">
+									<iframe src="https://www.google.com/maps/d/embed?mid=1TmQSB0qYXFW8bM6_4S4E50-71LB4EJch" class="google-map"></iframe>
+									<div class="row">
+										{# <figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">
+											<div class="spacer-xl"></div>
+											Configuration du site de Pinchat.
+										</figcaption> #}
+									</div>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+						
+						<p>
+							Tôt le matin, et en fin d'après-midi, des flots d'élèves montent et redescendent le chemin des Moraines par petits groupes,
+							encapuchonnés, portables en main, avec parfois une enceinte portative crachant du rap. Des exclamations parfois très crues
+							fusent dans le brouhaha:
+						</p>
+
+						<p><i>
+							 — «Ferme ta gueule, en plus déjà tu schlingues»<br>
+							 — «On s’en bat les couilles»<br>
+							 — «Nique ta mère»<br>
+							 — «Putain».
+						</i></p>
+						
+						<p>
+							Le chemin est connu pour être le lieu où se passent des bagarres. Plus récemment, il est devenu le théâtre d'une coutume
+							brutale. Les élèves dont c'est l'anniversaire se voient barbouillés par surprise de farine et d'oeufs jetés par leurs camarades.
+							Une lettre a été adressée aux parents pour interdire la pratique, sans la faire cesser complètement.
+						</p>
+
+						<p>
+							Pinchat a longtemps eu la réputation d'être un cycle plutôt bourgeois. Mais son statut s'est dégradé: «Pinchat aurait une
+							mauvaise image/réputation avec des bagarres régulières et de la méchanceté», note <a href="pdf/pv_ade_22.05.17.pdf" target="_blank">le procès-verbal de l'assemblée des délégués
+							d'élèves du 22 mai 2017</a>.
+						</p>
+
+						<p>
+							Sans nier la survenance de bagarres occasionnelles, son directeur Alain Basset estime qu'il y a problèmes plus graves. D'abord
+							le cyberharcèlement, ces insultes et menaces diffusées par les réseaux sociaux, surtout le soir ou la nuit. Ensuite la phobie
+							scolaire: «Des élèves n'arrivent plus à aller à l'école. Certains font le chemin mais repartent aussitôt, en disant qu'ils
+							n'arrivent pas à rester en cours.» Le problème toucherait surtout des élèves en difficulté, notamment ceux de R1/CT.
+						</p>
+
+						<!-- PICTURE full -->
+						<!-- <div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-lg">
+									<img class="img-responsive zoom lazy" data-original="img/article/pinchat6.jpg">
+									<div class="row">
+										<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">
+																	<div class="spacer-xl"></div>
+																	Le Salento (Salentu en dialecte) constitue l'extrémité sud-est de la région des Pouilles en Italie. Décrit comme étant le
+																	« talon de la botte italienne », il englobe la totalité de la province de Lecce.
+																</figcaption>
+									</div>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div> -->
+						
+						<p class="f-h6 f-font1 f-inter">Le rêve brisé d'André Chavannes</p>
+						
+						<p>
+							La ségrégation scolaire, si lisible aujourd'hui, est aux antipodes des idéaux fondateurs du cycle. Si Pinchat a été placé
+							à la frontière des quartiers et des classes, c'était, à l'origine, pour mieux les brasser – jusqu'à effacer les barrières
+							sociales.
+						</p>
+						
+						<p>
+							Pinchat a été le second cycle construit à Genève, en 1964-1965, la grande époque d'André Chavannes, conseiller d'Etat qui
+							dirigea l'instruction publique de 1961 à 1985. «La volonté de Chavannes était la mixité», rappelle Christoph Bollmann, ancien
+							architecte et animateur de radio, qui connaît parfaitement le quartier de Pinchat. «La République voulait niveler les classes
+							sociales. Chavannes était un socialiste et dans son idée, les milieux aisés et moins aisés devaient se confronter, pour que
+							la ploutocratie ne se perpétue pas à l'école.»
+						</p>
+
+						<!-- <div class="collapsable">
+							<div class="collapsable--header f-center">
+								<figure class="portrait is-hidden">
+									<img src="img/article/collapsable3-thumb.jpg">
+								</figure>
+								<span class="f-font1 f-weight400 f-h6 f-flash is-hidden">
+									Risques: L’échelle des dangers d’avalanches a changé
+								</span>
+								<span class="f-font2 f-weight400 f-h5 f-gray-medium f-aa is-hidden">
+									Le degré 4 est étendu vers le bas et interviendra plus souvent désormais. Mais le bureau des avalanches, le SLF, veut à tout prix éviter que le danger soit sous-estimé.
+								</span>
+								<button type="button" class="btn btn-default btn-lg btn-reveal f-font3 f-weight600 f-aa">Masquer</button>
+							</div>
+						
+							<div class="collapsable--content">
+						
+								<div class="encart SINFORMER no-padding">
+									<div class="clearfix">
+								
+										<div class="col-md-12 pull-right" style="padding: 0;">
+											<div class="encart-3-columns">
+												<span class="f-h6 f-font1 f-weight700">L’échelle des dangers d’avalanches a changé</span>
+												<div class="spacer-sm"></div>
+								
+												<span class="f-font1 f-weight700 f-aa">Le degré 4 est étendu vers le bas et interviendra plus souvent désormais. Mais le bureau des avalanches, le SLF, veut
+													à tout prix éviter que le danger soit sous-estimé.</span>
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Cette semaine, le SLF est difficile à joindre, «absorbé par la situation actuelle», nous dit-on depuis Davos. Il est
+													vrai que c’est un hiver rare, pour ne pas dire unique, par l’intensité des précipitations.</span>
+								
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Mais ses conditions exceptionnelles ne font pas que bouleverser le quotidien de l’institut pour l’étude pour la neige
+													et des avalanches. Elles ne provoquent pas seulement blocages et chaos sur les routes et dans les villages de montagne.
+													Elles dissimulent aussi un changement dans l’échelle des dangers d’avalanche.</span>
+								
+								
+												<div class="spacer-sm"></div>
+												<div class="spacer-sm"></div>
+												<span class="f-font1 f-weight700">Seulement aux professionnels</span>
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Depuis cet hiver, le SLF a décidé de modifier quelques-uns de ses critères. L’objectif était de corriger les différences
+													avec certains pays voisins. La principale conséquence est que le degré de danger 4 (fort) est désormais plus étendu.
+													Vers le bas. «Les degrés 3 les plus élevés deviendront des degrés 4», résume Thomas Stucki. Mais le responsable de l’équipe
+													Prévisions d’avalanches du SLF est prudent dans le choix des mots. Il sait que le sujet est sensible. «Cela ne concernera
+													qu’une poignée de cas par hiver.»</span>
+												<span class="f-font2">En termes de communication, c’est un vrai exercice d’équilibriste pour le SLF. Parce que d’une part, certains services
+													de sécurité se mettent en branle de manière systématique, lorsque le degré 4 est affiché. «Nous avons donc modifié la
+													manière de rédiger nos recommandations, qui était plus strictes auparavant, précise Thomas Stucki. Chaque risque mérite
+													d’être analysé localement, sur la base de ses propres mesures et observations.»</span>
+								
+												<div class="spacer-sm"></div>
+												<span class="f-font2">D’autre part, le SLF devait gérer les effets de ce changement sur les skieurs hors-piste, les randonneurs ou les alpinistes.
+													Si l’institut l’a seulement communiqué aux professionnels de la montagne, et non pas au grand public, c’est parce qu’il
+													veut éviter que le danger soit sous-estimé par ceux qui consultent son bulletin, avant de prévoir une sortie en montagne.</span>
+								
+												<div class="spacer-sm"></div>
+												<div class="spacer-sm"></div>
+												<span class="f-font1 f-weight700">Le degré 3 est le plus mortel</span>
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Avant que cette décision ne soit prise, une étude (non publiée) a été réalisée. Elle a pu s’appuyer sur les milliers
+													de données qu’a accumulées le SLF depuis l’hiver 1937-1938. En regard du changement d’échelle, cette statistique est
+													particulièrement équivoque: au cours des vingt dernières années, seulement 5% des accidents mortels se sont produits
+													pendant un degré 4. Par contre, 60% des décès sont intervenus lorsque le degré de danger était à 3.</span>
+								
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Parce qu’en degré 4, les sorties sont beaucoup moins nombreuses? Des professionnels de la montagne nous le confirment:
+													le passage du danger 3 au danger 4 est rédhibitoire. Il décourage une immense majorité des skieurs hors piste. «Les
+													situations avec un degré 3 sont beaucoup plus fréquentes que les autres, ajoute Thomas Stucki. Et elles offrent souvent
+													de belles conditions pour les randonnées. Mais il est évident que si l’on affiche un degré 4, c’est qu’il y a vraiment
+													du danger.»</span>
+								
+								
+											</div>
+								
+								
+								
+								
+										</div>
+									</div>
+									<div class="encart-chart">
+										<div class="col-md-8 encart-chart-figure">
+											<span class="f-h5 f-font1 f-weight700 f-center">Accidents mortels par degré de danger</span>
+											<div class="spacer-lg"></div>
+											<canvas id="myChart"></canvas>
+										</div>
+										<div class="box-aside col-md-4 encart-chart-caption">
+											<div class="spacer-xs"></div>
+											<span class="f-h5 f-font1 f-weight700">Accidents d'avalanche mortels (20 ans)</span>
+											<div class="spacer-lg"></div>
+											<iframe class="custom" src='https://map.geo.admin.ch/embed.html?lang=fr&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&E=2631225.45&N=1193697.01&zoom=0&layers=KML%7C%7Chttps:%2F%2Fwww.slf.ch%2Favalanche%2Faccidents%2Faccidents_20years_fr.kml,ch.swisstopo.zeitreihen,ch.swisstopo.geologie-geologischer_atlas_vector.metadata&layers_timestamp=,18641231,&layers_visibility=true,false,false'
+											 width='400' height='300' frameborder='0' style='border:0'></iframe>
+										</div>
+								
+									</div>
+								
+								</div>
+						
+							</div>
+						
+							<div class="collapsable--footer f-center">
+								<button type="button" class="btn btn-default btn-lg f-font3 f-weight600 f-aa">Ouvrir</button>
+							</div>
+						</div> -->
+
+						<!-- ANIM -->
+						<div class="scene-stepped scene-stepped-3 box-full">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<div class="scene-wrapper col-md-8 col-md-offset-2">
+									<figure class="scene-stepped--figure col-md-5">
+										<img src="img/article/kalonji-travailler-kid.png" alt="" class="anim-img1">
+										<img src="img/article/kalonji-travailler-txt.png" alt="" class="anim-img2">
+									</figure>
+									<figcaption class="scene-stepped--figcaption col-md-7">
+										<div class=" f-font1 f-quote f-gray-dark f-weight100 f-aa  col-xs-offset-1">
+											3 - Un élève de Pinchat à son enseignante, en début d'année
+											<span class="signature f-font1 f-aside f-weight400 f-gray-medium f-aa">— Illustration: Kalonji</span>
+										</div>
+									</figcaption>
+								</div>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+
+						<p>
+							André Chavannes rêvait d'un cycle sans niveaux, dit «hétérogène». Il pensait que ce système ouvert finirait par s'imposer.
+							Mais en 2011, après des années de guérilla entre partisans des niveaux et tenants des classes hétérogènes, le peuple genevois
+							a approuvé un compromis: des séparations nettes entre élèves forts, moyens et faibles, comme voulu par la droite, mais avec
+							des passerelles permettant le passage entre les couches, pour amadouer la gauche.
+						</p>
+
+						<p>
+							A Pinchat, huit élèves de R1 ont ainsi pu passer en R2 (le niveau moyen) depuis le début de l'année. Mais ce système hybride
+							est source d'effets pervers, argumente l'ancien directeur Jean-Michel Bugnion: «L'élève de R1 a un sentiment d'échec, mais
+							il peut être rédempté, sauvé. Beaucoup ont une forte attente de passer au niveau supérieur. Une minorité y arrive après trois
+							mois, un an. Et ceux qui restent? Et bien, ils sont damnés! L'élève se dit alors: il faut bien qu'on m'admire d'une façon
+							ou d'une autre puisqu'à l'école je suis mauvais. Et comment devient-on populaire? En faisant rire, d'abord au détriment des
+							profs.»
+						</p>
+
+						
+
+						<p class="f-h6 f-font1 f-inter">Profs en rupture</p>
+
+						<p>
+							Le corps enseignant n'a pas été formé pour affronter ces classes rebelles. Ses représentants sont en majorité des universitaires,
+							éloignés des réalités sociales qui nourrissent le mal-être de leurs élèves. Pour beaucoup, le choc est rude, parfois dévastateur.
+						</p>
+
+						<!-- PICTURE normal -->
+						<div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-sm ">
+									<img class="img-responsive zoom lazy col-md-8" data-original="img/article/pinchat89.jpg">
+									<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">— Photo: Eddy Mottaz</figcaption>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+						
+
+						
+
+						<p>
+							Dans un sondage diffusée en 2017, <a href="http://www.le-ser.ch/actualites/rapport-2017-sur-la-sant%C3%A9-des-enseignants-romands" target="_blank">le Syndicat des enseignants romands</a> faisait état d'un «épuisement professionnel et
+							d'un ras-le-bol toujours plus grands» de ses membres. A Genève, 65,7% des profs répondaient avoir «souvent» ou «très souvent»
+							l'impression de «devoir tenir le coup en période scolaire», à la limite du burn-out.
+						</p>
+
+						<!-- PICTURE aside (doit marcher avec un autre contenu.) -->
+						<div class="box-aside col-md-4" style="color:red; display: inline; overflow: auto;">
+							<figure>
+								<figcaption class="f-font1 f-aside f-gray-medium f-aa"><b class="f-gray-dark">«J'ai l'impression de devoir tenir le coup pendant la période scolaire»</b><br>Source: sondage publié en 2017 par le Syndicat des enseignants romands</figcaption>
+								<div class="spacer-xl"></div>
+								<canvas id="myChart3"></canvas>
+								<div class="spacer-xl"></div>
+
+								{# <canvas id="myChart3"></canvas>
+								<div class="spacer-xl"></div> #}
+								{# <figcaption class="f-font1 f-aside f-gray-medium f-aa">Source: sondage publié en 2017 par le Syndicat des enseignants romands.</figcaption> #}
+							</figure>
+						</div>
+
+						<p>
+							Juliane Bourgeois connaît cette situation. Durant deux ans, à Pinchat, elle a enseigné 13 heures par semaine à une classe
+							de 9ème R1. Une expérience qui l'a à chaque fois épuisée et forcée à se mettre à l'arrêt durant un mois. «Avec ces classes,
+							on ne peut pas se permettre une seconde de répit, explique-t-elle. Il faut toujours les reconcentrer, les remotiver, les
+							ramener sur le sujet en cours... C'est un peu comme de tourner à fond en voiture, en première. Si vous faites ça trop longtemps,
+							le moteur explose!»
+						</p>
+
+						<p>
+							Jean-Claude Richoz, le coach pour classes difficiles, rencontre chaque semaine des profs épuisés et qui n’en peuvent plus
+							nerveusement: «Je travaille dans une école avec un groupe, et tout d'un coup, alors qu’on parle d’une situation de classe,
+							l’enseignant concerné craque et se met à pleurer.»
+						</p>
+
+						<p>
+							Les classes les plus difficiles exigent un profil d'enseignant particulier. Fort, confiant, prêt à nouer un lien affectif
+							avec ses élèves. Capable, aussi, de garder son calme quand on le provoque, pour éviter «l'escalade symétrique»: l'enseignant
+							demande quelque chose («pose ton téléphone, s'il te plaît»), l'élève refuse, l'enseignant insiste, l'élève l'injurie («Jt'e
+							casse la gueule, pauvre conne!»), le ton monte quasiment jusqu'à en venir aux mains.
+						</p>
+
+						<!-- ANIM -->
+						<div class="scene-stepped scene-stepped-4 box-full">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<div class="scene-wrapper col-md-8 col-md-offset-2">
+									<figure class="scene-stepped--figure col-md-5">
+										<img src="img/article/kalonji-obeis-prof.png" alt="" class="anim-img1">
+										<img src="img/article/kalonji-obeis-txt.png" alt="" class="anim-img2">
+										<img src="img/article/kalonji-obeis-kid.png" alt="" class="anim-img3">
+									</figure>
+									<figcaption class="scene-stepped--figcaption col-md-7">
+										<div class=" f-font1 f-quote f-gray-dark f-weight100 f-aa  col-xs-offset-1">
+											4 - Un élève de Pinchat à son enseignante, en début d'année
+											<span class="signature f-font1 f-aside f-weight400 f-gray-medium f-aa">— Illustration: Kalonji</span>
+										</div>
+									</figcaption>
+								</div>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+
+						<p>
+							Certains arrivent à digérer ces situations, d'autres pas. «Vous avez énormément de profs qui sont à l'aise avec ces classes,
+							mais quand vous n'êtes pas formés, pas volontaire, vous êtes rapidement en difficulté et ça peut être extrêmement fatiguant»,
+							commente l'ancien conseiller d'Etat genevois Charles Beer, qui a mis en oeuvre la dernière réforme du cycle en 2011.
+						</p>
+
+						<p>
+							Depuis, les réseaux sociaux et les smartphones ont changé le rapport de force au détriment du corps enseignant. Un professeur
+							de Pinchat s'est ainsi retrouvé piégé par ses élèves, qui l'ont provoqué en classe pour l'énerver et filmer en cachette sa
+							réaction. «Ça s'est bien terminé, le film a été effacé et l'élève a été sanctionné», assure toutefois le directeur Alain
+							Basset.
+						</p>
+
+						<p class="f-h6 f-font1 f-inter">Solutions de secours</p>
+
+						<!-- PICTURE aside (doit marcher avec un autre contenu.) -->
+						<!-- <div class="box-aside col-md-4" style="color:red; display: inline; overflow: auto;">
+							<figure>
+								<div class="video-wrapper">
+									<div class="video-wrapper-flex">
+										<iframe src="https://player.vimeo.com/video/263294567" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+										 allowfullscreen></iframe>
+									</div>
+								</div>
+								<div class="spacer-xl"></div>
+								<figcaption class="f-font1 f-aside f-gray-medium f-aa">En plein foyer de l'épidémie, au milieu des oliviers desséchés, Tina Minerva et son association parviennent à guérir des
+									arbres grâce à des méthodes respectueuses de l'environnement</figcaption>
+							</figure>
+						</div> -->
+
+						<p>
+							Pour aider le personnel, des formations ont été mises en place. Elles se nomment discipline positive, médiation culturelle,
+							dialogue philosophique... A Pinchat, il n'est pas rare qu'une classe turbulente soit encadrée par deux enseignants. Pour
+							réapprendre à «poser le cadre», certains cycles ont recours à des coach externes.
+						</p>
+
+						<p>
+							Mais l'offre la plus surprenante, proposée depuis quelques années par le Département genevois de l'instruction publique,
+							s'intitule «Comment ajuster notre posture et trouver la juste distance intérieure face à des classes difficiles, grâce à
+							la rencontre avec un cheval».
+						</p>
+
+						<!-- Vidéo thérapie cheval -->
+						<div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-lg">
+									<div class="video-wrapper">
+										<div class="video-wrapper-flex">
+											<iframe src="https://player.vimeo.com/video/263294567" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+											 allowfullscreen></iframe>
+										</div>
+									</div>
+									<div class="row">
+										<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">
+											<div class="spacer-xl"></div>
+											 Christine Agassis Zink, équipédagogue.<br>— Vidéo: Simon Gabioud
+										</figcaption>
+									</div>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+
+						<p>
+							Apprivoiser des adolescents rebelles en s'initiant au dressage? Christine Agassis Zink, l'équipédagogue qui donne ce cours,
+							explique son approche: «Face à ces classes entraînées par des éléments perturbateurs, on se retrouve comme face un cheval:
+							il est plus fort que vous, imprévisible et potentiellement incontrôlable.»
+						</p>
+
+						<p>
+							Selon elle, «les profs qui sortent de l'université vivent parfois dans un monde privilégié, préservé de la violence. Ils
+							ont de la difficulté à se faire entendre, à être respectés, à avancer dans le programme. Ils se sentent démunis et impuissants.
+							Ça fait vingt ans que j'accompagne des enseignants, et j'ai pu observer en parallèle l'évolution de l'enfance. Beaucoup de
+							parents sont dans l'incapacité de proposer un cadre cohérent.»
+						</p>
+
+						<p>
+							Face à la démission de certaines familles, la définition traditionnelle du métier d'enseignant – transmettre un savoir –
+							devient obsolète. «Ce dont ces élèves ont besoin, c'est d'éducateurs bienveillants», estime Christine Agassis Zink
+						</p>
+
+						
+
+						
+
+						<p class="f-h6 f-font1 f-inter">Après le cycle, la voie de garage?</p>
+
+						<p>
+							Indiscipline, faible niveau scolaire, profs laminés... Ces problèmes ne sont pas sans conséquences pour la suite. A Genève,
+							les élèves les plus faibles du Cycle alimentent, quelques années plus tard, le décrochage scolaire.
+						</p>
+
+						<!-- PICTURE aside (doit marcher avec un autre contenu.) -->
+						<div class="box-aside col-md-4" style="color:red; display: inline; overflow: auto;">
+							<figure>
+								<figcaption class="f-font1 f-aside f-gray-medium f-aa"><b class="f-gray-dark">De moins en moins d'apprentissages, de plus en plus d'élèves en transition</b><br>Source: Service de recherche en éducation</figcaption>
+								<div class="spacer-xl"></div>
+								<canvas id="myChart2"></canvas>
+								<div class="spacer-xl"></div>
+								<!-- <canvas id="myChart3"></canvas> -->
+								{# <figcaption class="f-font1 f-aside f-gray-medium f-aa">Source: Service de recherche en éducation.</figcaption> #}
+							</figure>
+						</div>
+
+						<p>
+							Le phénomène se joue en deux temps. A la sortie du Cycle, les élèves les moins bien notés tentent de se diriger vers un
+							apprentissage. Mais ils se heurtent souvent à un mur. Trop jeunes, sans formation pratique, «ils ne correspondent pas aux
+							exigences des entreprises, analyse François Rastoldo, du Service de recherche en éducation (SRED). Ils sont coincés entre
+							l'école, où ils n'ont pas accès en raison des notes, et les entreprises qui ne veulent pas les embaucher.»
+						</p>
+
+						<p>
+							A Genève, l'économie tertiarisée laisse peu d'options aux jeunes les moins scolaires. «Pour accéder aux banques, régies,
+							assurances, bonne chance! Le niveau d'exigence a beaucoup augmenté», ajoute François Rastoldo.
+						</p>
+
+						
+
+						<p>
+							De plus en plus, ces élèves se dirigent donc vers des «boucles de transition»: des classes préparatoires censées les amener
+							vers des formations à leur portée, comme l'Ecole de culture générale (ECG, qui forme notamment aux métiers de la santé) ou
+							un Centre de transition professionnelle destinés aux métiers industriels ou manuels.
+						</p>
+
+						
+						
+
+						<p>
+							Le nombre d'élèves orientés vers ces «boucles» a doublé entre 2000 et 2016, passant de 7% à 15% des adolescents qui sortent
+							du Cycle. Mais le taux d'échec des classes préparatoires est très élevé – environ 50%. Résultat: ceux qui sortent sans formation
+							ni place d'apprentissage de cette transition sont des centaines chaque année – quelque 330 en 2013, selon les chiffres du
+							SRED.
+						</p>
+
+						<!-- PICTURE normal -->
+						<div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-sm ">
+									<img class="img-responsive zoom lazy col-md-8" data-original="img/article/pinchat77.jpg">
+									<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">— Photo: Eddy Mottaz</figcaption>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+
+						<!-- GRAPH full -->
+						<!-- <div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-lg">
+									<canvas id="myChart2"></canvas>
+									<div class="row">
+										<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">
+											<div class="spacer-xl"></div>
+											Certains totaux peuvent être différent de 100% en cas de transitions d'une organisation scolaire à une autre.
+										</figcaption>
+									</div>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div> -->
+
+						<p>
+							Pour l'autre moitié de postulants, ceux qui réussissent à entrer à l'ECG, l'enjeu va être de «se bouger pour trouver une
+							place, pour définir un projet», résume Isabelle Godot, directrice de l'ECG Ella-Maillart, au centre de Genève. «Beaucoup
+							de ces gamins ne voient pas de sens à ce qu'ils font, observe-t-elle. Souvent, ils n'ont pas redoublé, mais le système les
+							a poussés, et ils ont continué leur parcours sans qu'on leur dise «stop, ça ne va pas».
+						</p>
+
+						<!-- PICTURE full -->
+						<!-- <div class="box-full col-md-12">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<figure class="figure-lg">
+									<img class="img-responsive zoom lazy" data-original="img/article/pinchat89.jpg">
+									<div class="row">
+										<figcaption class="f-font1 f-aside f-gray-medium f-aa col-md-4">
+											<div class="spacer-xl"></div>
+											Le Salento (Salentu en dialecte) constitue l'extrémité sud-est de la région des Pouilles en Italie. Décrit comme étant le
+											« talon de la botte italienne », il englobe la totalité de la province de Lecce.
+										</figcaption>
+									</div>
+								</figure>
+								<div class="spacer-xl"></div>
+							</div>
+						</div> -->
+
+						<p class="f-h6 f-font1 f-inter">Vers un autre enseignement</p>
+
+						<p>
+							Pour mieux cadrer, puis orienter ces élèves, il faudrait un enseignement différent. Une formation concrète, plutôt qu'un
+							savoir scolaire au rabais. «Il faudrait s'ouvrir beaucoup plus à des profs orientés vers l'éducation et des projets d'apprentissage»,
+							estime l'ancien conseiller d'Etat Charles Beer. Une évolution pour l'instant impossible: «On arrive pas à diversifier, vu
+							les exigences requises. Pourtant, la recherche d'apprentissage devrait être prioritaire en toutes situations.»
+						</p>
+
+						
+
+						
+
+
+						<p>
+							Avec la dernière réforme du Cycle, le temps consacré aux disciplines pratiques – musique, dessin, travaux manuels – a baissé.
+							Les élèves de R1/CT sont bombardés de mathématiques, d'allemand et de français, dans une tentative désespérée de «faire le
+							programme». Alors que selon Jean-Michel Bugnion, il leur faudrait «plus de liberté pour monter des projets, pour responsabiliser
+							ces classes».
+						</p>
+
+						
+
+						<p>
+							Interrogée par <i>Le Temps</i> sur la situation au Cycle, l'actuelle ministre genevoise de l'éducation, Anne Emery-Torracinta,
+							partage le constat général d'échec en ce qui concerne les élèves les plus faibles. «On est loin du compte en terme d'apprentissage
+							scolaire de base. Et ça, c'est très inquiétant», déclare-t-elle dans un entretien que nous publierons en intégralité ce lundi.
+						</p>
+
+						<p>
+							Elle promet de lancer une réforme du Cycle – à condition, bien sûr, d'être réélue lors de l'élection du Conseil d'Etat qui
+							se déroulera le 15 avril et le 6 mai.
+						</p>
+
+						<!-- ANIM -->
+						<div class="scene-stepped scene-stepped-5 box-full">
+							<div class="row">
+								<div class="spacer-sm"></div>
+								<div class="scene-wrapper col-md-8 col-md-offset-2">
+									<figure class="scene-stepped--figure col-md-5">
+										<img src="img/article/kalonji-schlingue-kidd.png" alt="" class="anim-img1">
+										<img src="img/article/kalonji-schlingue-kidg.png" alt="" class="anim-img2">
+										<img src="img/article/kalonji-schlingue-txt.png" alt="" class="anim-img3">
+									</figure>
+									<figcaption class="scene-stepped--figcaption col-md-7">
+										<div class=" f-font1 f-quote f-gray-dark f-weight100 f-aa  col-xs-offset-1">
+											4 - Un élève de Pinchat à son enseignante, en début d'année
+											<span class="signature f-font1 f-aside f-weight400 f-gray-medium f-aa">— Illustration: Kalonji</span>
+										</div>
+									</figcaption>
+								</div>
+								<div class="spacer-xl"></div>
+							</div>
+						</div>
+
+						
+
+						<p>
+							Mais même si une réforme est mise en route, elle prendra du temps. Pour changer la loi actuelle, il faudra des débats au
+							Grand Conseil, suivis d'un éventuel référendum. Autant dire des années de travail, avec des chances de succès incertaines.
+						</p>
+
+						<p>
+							En attendant, les cycles devront gérer leurs classes infernales. Avec, parfois, des signes encourageants. A Pinchat, la
+							classe de 1011 CT est en voie de reformation avec les élèves les mieux disposés. Et même ceux qui sortent des classes les
+							plus faibles peuvent rebondir, assure Isabelle Godot, qui en accueille certains à l'ECG: «Ici, c'est un nouveau départ. Certains
+							ont fait des bêtises au Cycle et se disent: «Je vais essayer de faire mieux». Mais ce sont des élèves chouettes. S'il y a
+							un cadre bienveillant autour d'eux, ça fonctionne.»
+						</p>
+
+						<div class="spacer-lg"></div>
+
+						<div class="collapsable is-collapsed">
+							<div class="collapsable--header f-center">
+								<figure class="portrait">
+									<img src="img/article/collapsable1-thumb.jpg">
+								</figure>
+								<span class="f-font1 f-weight400 f-h6 f-flash">
+									 Recettes pour gérer une classe difficile
+								</span>
+								<!-- <span class="f-font2 f-weight400 f-h5 f-gray-medium f-aa">
+									Il existe aujourd’hui, et de plus en plus, une multitude de sources d’information utiles pour se préparer au mieux au ski
+									hors piste ou, plus généralement, aux sorties en montagne. Sans prétention d’exhaustivité, Le Temps en a sélectionné quelques-unes...
+								</span> -->
+								<button type="button" class="btn btn-default btn-lg btn-reveal f-font3 f-weight600 f-aa">Ouvrir</button>
+							</div>
+						
+							<div class="collapsable--content">
+								<div class="interview">
+									<div class="box-aside col-md-4">
+										
+										 
+										<figure>
+											<!-- <img src="img/article/interview2.jpg"> -->
+											<span class="f-h6 f-font1">Recettes pour gérer une classe difficile</span>
+											<!-- <div class="spacer-lg"></div> -->
+											<figcaption class="f-font1 f-aside f-gray-medium f-aa">
+												<span class="f-weight700">Sources:</span>enseignants de Pinchat et de Drize; Jean-Claude Richoz, <i>Gestion de classes et d'élèves difficiles</i>, Lausanne, Favre,
+												2015</figcaption>
+											<div class="spacer-md"></div>
+											<div class="spacer-md"></div>
+											<div class="spacer-md"></div>
+										</figure>
+									</div>
+									<div class="interview-2-columns col-md-8">
+										<span class="f-font1 f-weight700">— Accueillir les élèves à l'entrée de la classe.</span>
+										<div class="spacer-sm"></div>
+										<span class="f-font2">Ces derniers comprennent qu'ils entrent dans un espace protégé.</span>
+								
+										<div class="spacer-md"></div>
+										<span class="f-font1 f-weight700">— Créer des liens affectifs avec les élèves.</span>
+										<div class="spacer-sm"></div>
+										<span class="f-font2">Un simple «bonjour, comment ça va?» en début de journée peut aider.</span>
+								
+										<div class="spacer-md"></div>
+										<span class="f-font1 f-weight700">— Donner tout de suite du travail aux élèves.</span>
+										<div class="spacer-sm"></div>
+										<span class="f-font2">L'idée est de les garder. Exemple: recopier des phrases écrites au tableau en conjuguant des verbes, dans un silence
+										complet.</span>
+
+										<div class="spacer-md"></div>
+										<span class="f-font1 f-weight700">— Un bruit = une annotation dans le carnet.</span>
+										<div class="spacer-sm"></div>
+										<span class="f-font2">Dès qu'un élève sort du cadre, il est sanctionné.
+										</span>
+
+										<div class="spacer-md"></div>
+										<span class="f-font1 f-weight700">— Former une équipe d'enseignants soudée, avec des règles strictes et uniformes.</span>
+										<div class="spacer-sm"></div>
+										<span class="f-font2">«Le flou, c'est laisser la place au n'importe quoi.»
+										</span>
+
+										<div class="spacer-md"></div>
+										<span class="f-font1 f-weight700">— Mettre deux enseignants par classe à certaines heures.</span>
+
+										<div class="spacer-md"></div>
+										<span class="f-font1 f-weight700">— Engager un coach extérieur.</span>
+										<div class="spacer-sm"></div>
+										<span class="f-font2">Certains retraités très expérimentés, comme le Vaudois Jean-Claude Richoz ou le Français Serge Boimare, peuvent apporter de précieux conseils.
+										</span>
+
+										<div class="spacer-md"></div>
+										<span class="f-font1 f-weight700">— «Remettre en route la machine à penser» (méthode Boimare).</span>
+										<div class="spacer-sm"></div>
+										<span class="f-font2">Les élèves écoutent un texte lu par l'enseignant et doivent le résumer, en tirer des questions existentielles, parfois sous
+										forme de petit dessin.
+										</span>
+
+										
+										
+									</div>
+								</div> 
+						
+								<!-- <div class="encart SINFORMER no-padding">
+									<div class="clearfix">
+										<div class="box-aside col-md-3">
+											<div class="slider owl-carousel owl-theme">
+												<img src="img/article/infog1.png" alt="">
+												<img src="img/article/infog2.png" alt="">
+												<img src="img/article/infog3.png" alt="">
+												<img src="img/article/infog4.png" alt="">
+												<img src="img/article/infog5.png" alt="">
+											</div>
+										</div>
+										<div class="col-md-9 pull-right" style="padding: 0;">
+											<div class="encart-2-columns">
+												<span class="f-h6 f-font1 f-weight700">Avant de sortir, se former et s’informer</span>
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Il existe aujourd’hui, et de plus en plus, une multitude de sources d’information utiles pour se préparer au mieux
+													au ski hors piste ou, plus généralement, aux sorties en montagne. Sans prétention d’exhaustivité, Le Temps en a sélectionné
+													quelques-unes.
+												</span>
+						
+												<div class="spacer-sm"></div>
+												<span class="f-font2">D’abord, le site internet de l’
+													<a href="https://www.slf.ch/fr.html" target="_blank">Institut pour l’étude de la neige et des avalanches</a> (SLF) à Davos, dont l’interface s’est beaucoup améliorée,
+													depuis cet hiver. Plus utile encore, son application
+													<a href="https://www.whiterisk.ch/fr" target="_blank">Whiterisk</a>, qui regroupe peu ou prou les mêmes informations que son site, mais qui s’adresse davantage au grand
+													public.</span>
+						
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Citons également la brochure
+													<b>«Attention avalanches»</b>>, disponible auprès de ses éditeurs (le Club Alpin Suisse, le SLF, l’Association suisse
+													des guides de montagne, etc.). Cette dernière permet d’en apprendre un peu plus sur l’évolution de la structure neigeuse
+													en fonction de la météo et sur les conditions propices au départ des avalanches.</span>
+						
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Quelques ouvrages plus conséquents sont également à recommander:
+													<i>Estimer et limiter le risque d’avalanche</i>, du nivologue fondateur de Meteorisk Robert Bolognesi,
+													<i>3x3 Avalanches</i>, par le guide de montagne Werner Munter ou encore
+													<i>Avalanches, comment réduire le risque</i>, par Olivier Moret et Philippe Descamps, anciens rédacteurs en chef de Montagnes
+													Magazine et anciens directeurs de la Fondation Petzl.</span>
+						
+												<div class="spacer-sm"></div>
+												<span class="f-font2">Enfin, pour affiner sa pratique, il existe une multitude de
+													<i>cours avalanche</i>. Leurs coûts: 100 à 200 francs pour une journée de formation à l’évaluation du danger, à l’utilisation
+													du matériel et aux réflexes à adopter en cas d’avalanche.
+												</span>
+											</div>
+										</div>
+									</div>
+								</div> -->
+						
+							</div>
+						
+							<div class="collapsable--footer f-center">
+								<button type="button" class="btn btn-default btn-lg f-font3 f-weight600 f-aa">Ouvrir</button>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="prefooter">
+			<div class="container">
+
+				<div class="row">
+					<h3 class="text-center f-font1 f-h3 f-weight100 f-aa">Nos grands formats</h3>
+					<div class="spacer-xl"></div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2018/longread-avalanches/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-avalanches.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine">
+										<div></div>
+									</div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">L’avalanche de leur vie</h4>
+										<!-- <p class="tilter__description">À la frontière entre les Etats-Unis et le Mexique</p> -->
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2016/longread-fioul-lourd/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-fioul-lourd.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine"><div></div></div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Fioul&nbsp;lourd</h4>
+										<p class="tilter__description">Le sang impur de la globalisation</p>
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2016/shenzhen/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-shenzen.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine"><div></div></div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Shenzhen</h4>
+										<p class="tilter__description">De la fumée des usines aux ateliers d'artistes</p>
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2016/longread-horlogerie-japonaise/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-horlogerie-japonaise.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine"><div></div></div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Horlogerie japonaise</h4>
+										<p class="tilter__description">A la conquête du monde</p>
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2016/tchernobyl-30-ans/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-tcherno-30-ans.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine"><div></div></div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Voyage au cœur de la zone</h4>
+										<p class="tilter__description">Avec les exilés installés à Tchernobyl</p>
+										<!-- <p class="tilter__description">Comment Adula, le projet de parc national, agite le Tessin et les Grisons</p> -->
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2017/longread-epicerie-vrac/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-epicerie.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine">
+										<div></div>
+									</div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Au bonheur du vrac</h4>
+										<!-- <p class="tilter__description">Avec les exilés installés à Tchernobyl</p> -->
+										<!-- <p class="tilter__description">Comment Adula, le projet de parc national, agite le Tessin et les Grisons</p> -->
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2016/longread-gothard/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-gothard.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine">
+										<div></div>
+									</div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Les oubliés du Gothard</h4>
+										<!-- <p class="tilter__description">Avec les exilés installés à Tchernobyl</p> -->
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2017/bol-dor-mirabaud-epopee-technologique/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-mirabaud.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine">
+										<div></div>
+									</div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Le Bol D’Or</h4>
+										<p class="tilter__description">Une épopée technologique</p>
+										<!-- <p class="tilter__description">Comment Adula, le projet de parc national, agite le Tessin et les Grisons</p> -->
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2017/longread-horlogers-robots/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-robots.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine">
+										<div></div>
+									</div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Mon horloger est un robot</h4>
+										<!-- <p class="tilter__description">Avec les exilés installés à Tchernobyl</p> -->
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2016/longread-montgomery-st/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-montgommery.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine">
+										<div></div>
+									</div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Montgomery street</h4>
+										<p class="tilter__description">Des millionnaires aux vendeurs de crack</p>
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2016/longread-ski-chine/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-ski.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine">
+										<div></div>
+									</div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Quand la Chine skiera</h4>
+										<!-- <p class="tilter__description">Des millionnaires aux vendeurs de crack</p> -->
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<main>
+							<a href="https://labs.letemps.ch/interactive/2017/longread-au-pied-du-mur/" target="_blank" class="tilter tilter--2">
+								<figure class="tilter__figure">
+									<img class="tilter__image" src="img/article-card-mur.jpg" alt="img03" />
+									<div class="tilter__deco tilter__deco--shine">
+										<div></div>
+									</div>
+									<div class="tilter__deco tilter__deco--overlay"></div>
+									<figcaption class="tilter__caption">
+										<h4 class="tilter__title f-font1 f-h3 f-weight700 f-aa">Au pied du mur</h4>
+										<p class="tilter__description">À la frontière entre les Etats-Unis et le Mexique</p>
+									</figcaption>
+									<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+										<path d="M20.5,20.5h260v375h-260V20.5z" />
+									</svg>
+								</figure>
+							</a>
+						</main>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<footer class="f-font1 f-h5 f-white f-weight400 f-aa">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<ul class="footer-menu">
+							<a href="https://www.letemps.ch" target="_blank"><img src="img/logo-lt-blanc.svg" alt="" class="footer-logo"></a>
+							<li>&nbsp;</li>
+							<li>&nbsp;</li>
+							<li><a href="https://www.letemps.ch/a-propos" target="blank">À propos</a></li>
+							<li><a href="https://www.letemps.ch/faq" target="blank">FAQ</a></li>
+							<li><a href="https://www.letemps.ch/contact" target="blank">Contacts</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<ul class="footer-menu">
+							<li><a href="http://www.admeira.ch/fr/brands/digital/letemps-ch" target="blank">Publicité</a></li>
+							<li><a href="http://www.letempsarchives.ch/" target="blank">Archives</a></li>
+							<li><a href="https://www.letemps.ch/abonnes/services" target="blank">Services</a></li>
+							<li><a href="https://www.letemps.ch/rss" target="blank">RSS</a></li>
+							<li><a href="https://www.letemps.ch/" target="blank">© 2018 Le Temps SA</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						
+						<h4 class="f-weight700">Vos newsletters</h4>
+						<h4>Inscrivez-vous et recevez les newsletter de votre choix. <span class="f-weight700"><a href="https://www.letemps.ch/newsletters" target="_blank">Voir la liste</a></span></h4>
+						<div class="spacer-xl"></div>
+						<div class="sharebox sharebox-invert">
+							<a href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><i class="fa fa-facebook fa-2x"></i></a>
+							<a href="https://twitter.com/intent/tweet?text={{ twitterDescription ~ ' ' ~ app.url ~ ' '|url_encode }}&via={{ brand }}"><i class="fa fa-twitter fa-2x"></i></a>
+							<a href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}"><i class="fa fa-linkedin fa-2x"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="credits col-md-12">
+						<div class="spacer-xl"></div>
+						<span class="f-h7 f-gray-medium">Format web: César Greppin</span><br>
+						<span class="f-h7 f-gray-medium">Photos: Eddy Mottaz</span><br>
+						<span class="f-h7 f-gray-medium">Illustrations: Kalondji</span><br>
+						<span class="f-h7 f-gray-medium">Montage vidéo: Simon Gabioud</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		{{ block('footer_brand') }}
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/lazyload.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/anim-blocks.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script> -->
+		<script src="js/jquery.fitvids.js"></script>
+		
+        <!-- tilt dependencies -->
+        <script src="js/tilt.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script> 
+		<script src="js/anime.min.js"></script>
+
+		<script src="js/zoom.js"></script>
+		<script src="js/viewport.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
+        <script>
+			(function() {
+				var tiltSettings = [
+				{},
+				{
+					movement: {
+						imgWrapper : {
+							translation : {x: 0, y: 0, z: 0},
+							rotation : {x: -5, y: 5, z: 0},
+							reverseAnimation : {
+								duration : 1200,
+								easing : 'easeOutElastic',
+								elasticity : 600
+							}
+						},
+						lines : {
+							translation : {x: 10, y: 10, z: [0,10]},
+							reverseAnimation : {
+								duration : 1000,
+								easing : 'easeOutExpo',
+								elasticity : 600
+							}
+						},
+						caption : {
+							translation : {x: 20, y: 20, z: 0},
+							rotation : {x: 0, y: 0, z: 0},
+							reverseAnimation : {
+								duration : 1500,
+								easing : 'easeOutElastic',
+								elasticity : 600
+							}
+						},
+						/*
+						overlay : {
+							translation : {x: 10, y: 10, z: [0,50]},
+							reverseAnimation : {
+								duration : 500,
+								easing : 'easeOutExpo'
+							}
+						},
+						*/
+						shine : {
+							translation : {x: 50, y: 50, z: 0},
+							reverseAnimation : {
+								duration : 1200,
+								easing : 'easeOutElastic',
+								elasticity: 600
+							}
+						}
+					}
+				
+				
+				}];
+				function init() {
+					var idx = 0;
+					[].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
+						idx = pos%2 === 0 ? idx+1 : idx;
+						new TiltFx(el, tiltSettings[idx-1]);
+					});
+				}
+				// Preload all images.
+				imagesLoaded(document.querySelector('main'), function() {
+					document.body.classList.remove('loading');
+					init();
+				});
+				// REMOVE THIS!
+				// For Demo purposes only. Prevent the click event.
+				[].slice.call(document.querySelectorAll('a[href="#"]')).forEach(function(el) {
+					el.addEventListener('click', function(ev) { ev.preventDefault(); });
+				});
+				var pater = document.querySelector('.pater'),
+					paterSVG = pater.querySelector('.pater__svg'),
+					pathEl = paterSVG.querySelector('path'),
+					paths = {default: pathEl.getAttribute('d'), active: paterSVG.getAttribute('data-path-hover')};
+				pater.addEventListener('mouseenter', function() {
+					anime.remove(pathEl);
+					anime({
+						targets: pathEl,
+						d: paths.active,
+						duration: 400,
+						easing: 'easeOutQuad'
+					});
+				});
+				pater.addEventListener('mouseleave', function() {
+					anime.remove(pathEl);
+					anime({
+						targets: pathEl,
+						d: paths.default,
+						duration: 400,
+						easing: 'easeOutExpo'
+					});
+				});
+			})();
+		</script>
+	</body>
+	
+</html>
